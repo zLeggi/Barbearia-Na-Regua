@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: auto;
+  max-width: 1280px;
+  
+}
+
+.header {
+  display: flex;
+  background-color: #bbbbbb;
+  justify-content: space-around;   
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+header img {
+  width: 120px;
+  margin: 20px;
+}
+
+
+nav li {
+  display: inline;
+  margin-left: 15px;
+}
+
+
+nav a {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  transition: .3s;
+  
+}
+
+nav li a:hover {
+  color:#c78c19;
+  text-decoration:overline;
+}
+
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+
+.produto p{
+  padding: 10px;
+}
+
+.produtos li img {
+  max-width: 250;
+}
+
+.produto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.produtos li:hover {
+  border-color: #c78c19;
+  cursor: pointer;
+}
+
+.produtos li:hover h2 {
+  color: gold;
+  font-size: 30px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+#main-formulario {  
+  display: flex;
+  margin: 40px;
+}
+
+#form {
+  width: 50%;
+}
+
+form#formulario { 
+  width: 100%;
+}
+
+.input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+form label, form p {
+  font-size: 20px;
+}
+
+form p{
+  margin: 10px 0;
+}
+
+#meiosContato {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+}
+
+
+form input.input, textarea{
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  margin: 10px 0 20px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  resize: none;
+  outline: none;
+}
+
+#form {
+  width: 50%;
+  display: flex;
+}
+
+#form-enviar{
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+ 
+
+#footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-image: url(../assets/bg.jpg);
+  font-size: 13px;
+ 
+}
+
+
