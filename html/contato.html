@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <title>Contato - Barbearia Na Regua</title>
 </head>
@@ -28,22 +31,22 @@
 
     <section id="form">
       <form id="formulario">
-        <label for="nome">Nome e Sobrenome</label>
-        <input id="nome" name="email" type="text" class="input">
+        <label for="nome">Nome e Sobrenome</label >
+        <input id="nome" name="email" type="text" class="input" required>
 
         <label for="email">Email</label>
-        <input type="text" name="" id="email" class="input" placeholder="email@dominio.com">
+        <input type="email" name="" id="email" class="input" placeholder="email@dominio.com" required>
 
         <label for="telefone">Telefone</label>
-        <input type="text" name="telefone" id="telefone" class="input" placeholder="99 9 9999-9999">
+        <input type="tel" name="telefone" id="telefone" class="input" placeholder="99 9 9999-9999" required>
 
         <label for="mensagem">Deixe sua mensagem</label>
 
-        <textarea name="mensagem" id="mensagem" class="input" cols="45" rows="20"></textarea>
+        <textarea name="mensagem" id="mensagem" class="input" cols="45" rows="20" required></textarea>
 
-        <div id="meiosContato">
+        <fieldset id="meiosContato">
 
-          <p>Como prefere nosso contato?</p>
+          <legend>Como prefere nosso contato?</legend>
 
           <label for="radio-email">
             <input type="radio" name="contato" id="radio-email" value="email">
@@ -60,24 +63,51 @@
             Watsapp
           </label>
 
-        </div>
+        </fieldset>
 
-        <div id="form-enviar">
+        <fieldset id="form-enviar">
 
-          <p>Gostaria de receber nossas novidades?</p>
+          <legend>Gostaria de receber nossas novidades?</legend>
           <label for="checkbox-verification">
             <input type="checkbox" name="verification-checkbox" >
             Marque se você quiser ficar atualizado
           </label>
-        </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual horário prefere ser atendido?</legend>
+          <select>
+            <option value="option1">Manhã</option>
+            <option value="option2">Tarde</option>
+            <option value="option3">Noite</option>
+          </select>
+        </fieldset>
+
+        <input type="submit" name="" id="enviarForm" value="Enviar formulario">
       </form>
     </section>
 
-    <section>
+    <section id="tabela">
       <table>
+        <thead>
+          <tr>
+            <td>Dia</td>
+            <td>Horário</td>
+          </tr>
+        </thead>
+        <tbody>
+          <td>Segunda</td>
+          <td>08~20 horas</td>
+        </tbody>
+        </tbody>
+        
         <tr>
-          <td></td>
-
+          <td>Quarta</td>
+          <td>08~20 horas</td>
+        </tr>
+        <tr>
+          <td>Sexta</td>
+          <td>08~20 horas</td>
         </tr>
       </table>
     </section>

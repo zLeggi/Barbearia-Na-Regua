@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/style-home.css">
+
   <title>Barbearia Alura</title>
 </head>
 
@@ -28,40 +32,63 @@
 
   <main>
 
-  
-  <div class="principal">
-    <img src="../assets/banner.jpg" alt="Foto de cadeiras de barbeiro">
-  
-    <h2 class="sobre">Sobre a Barbearia Na Regua</h2>
-  
-    <p>
-      no coração da cidade a <strong>Barbearia Na Regua</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
-    </p>
-  
-    <p>
-       Nossa missão é:<em><strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em>
-    </p>
-  
-    <p>
-      Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
-    </p>
-  </div>
+    <img src="../assets/banner.jpg" alt="Foto de cadeiras de barbeiro" class="banner">
+    <section class="principal">
 
-  <div class="div-beneficios">
-    <div id="beneficios">
+
+      <h2 class="sobre">Sobre a Barbearia Na Regua</h2>
+
+      <img class="utensilios" src="../assets/utensilios.jpg" alt="utensilios de um barbeiro">
+
+      <p>
+        no coração da cidade a <strong>Barbearia Na Regua</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
+      </p>
+
+      <p>
+        Nossa missão é:<em><strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em>
+      </p>
+
+      <p>
+        Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
+      </p>
+    </section>
+
+    <section class="mapa">
+      <h3 class="principal"> nosso estabelecimento</h3>
+      <p>Nosso estabelecimento esta localizado no coração da cidade</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13015.149591283049!2d138.73637559317902!3d35.36092217164466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2sMonte%20Fuji!5e0!3m2!1spt-BR!2sbr!4v1662128675690!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="principal">
       <h3 class="beneficios">Beneficios</h3>
-        <ul>
-          <li>Atendimento Personalizado</li>
-          <li>Espaco Diferenciado e Descontraido</li>
-          <li>Localização privilegiada</li>
-          <li>profissionais super Capacitados</li>
-       </ul>
-    </div>
 
-     <img src="../assets/beneficios.jpg" alt="homem no barbeiro aparando a barba">
-  </div>
-</main>
+      <div class="beneficios--container">
+        <div id="beneficios">
+
+          <ul class="lista--beneficios">
+            <li>Atendimento Personalizado</li>
+            <li>Espaco Diferenciado e Descontraido</li>
+            <li>Localização privilegiada</li>
+            <li>profissionais super Capacitados</li>
+          </ul>
+        </div>
+
+        <img class="imagem--beneficios" src="../assets/beneficios.jpg" alt="homem no barbeiro aparando a barba">
+      </div>
+
+
+      <div class="video">
+
+        <iframe width="320" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </section>
+  </main>
 
 </body>
+<footer id="footer">
+  <img src="../assets/logo-branco.png" alt="">
+  <p>&copy;Copyright Barbearia Alura - 2022 </p>
+</footer>
 
 </html>
